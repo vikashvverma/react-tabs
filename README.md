@@ -1,4 +1,4 @@
-# react-tabs [![Build Status](https://travis-ci.org/mzabriskie/react-tabs.svg?branch=master)](https://travis-ci.org/mzabriskie/react-tabs)
+# react-tabs [![Build Status](https://travis-ci.org/rackt/react-tabs.svg?branch=master)](https://travis-ci.org/rackt/react-tabs)
 
 React tabs component
 
@@ -27,10 +27,10 @@ var App = React.createClass({
 	handleSelect: function (index, last) {
 		console.log('Selected tab: ' + index + ', Last tab: ' + last);
 	},
-	
+
 	render: function () {
 		return (
-			
+
 			// <Tabs/> is a composite component and acts as the main container.
 			//
 			// `onSelect` is called whenever a tab is selected. The handler for
@@ -38,13 +38,13 @@ var App = React.createClass({
 			//
 			// `selectedIndex` is the tab to select when first rendered. By default
 			// the first (index 0) tab will be selected.
-			
+
 			<Tabs
 				onSelect={this.handleSelected}
 				selectedIndex={2}>
-				
+
 				// <TabList/> is a composit component and is the container for the <Tab/>s.
-				
+
 				<TabList>
 
 					// <Tab/> is the actual tab component that users will interact with.
@@ -55,7 +55,7 @@ var App = React.createClass({
 					// left/up to select tab to the left of selected).
 					//
 					// The content of the <Tab/> (this.props.children) will be shown as the label.
-					
+
 					<Tab>Foo</Tab>
 					<Tab>Bar</Tab>
 					<Tab>Baz</Tab>
@@ -71,7 +71,7 @@ var App = React.createClass({
 				// and the content shown will be "Hello from Foo".
 				//
 				// As with <Tab/> the content of <TabPanel/> will be shown as the content.
-				
+
 				<TabPanel>
 					<h2>Hello from Foo</h2>
 				</TabPanel>
